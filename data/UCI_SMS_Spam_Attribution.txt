@@ -1,0 +1,22 @@
+SMS Spam Collection Dataset
+
+Primary source: UCI Machine Learning Repository, SMS Spam Collection,
+https://archive.ics.uci.edu/dataset/228/sms+spam+collection
+Dataset DOI: https://doi.org/10.24432/C5CC84
+
+The full dataset file in this folder contains 5,574 labeled messages in the
+original tab-separated format. The UCI record reports 4,827 legitimate (ham)
+messages and 747 spam messages and lists the dataset under a CC BY 4.0 license.
+The local text file was retrieved from a public GitHub mirror of the UCI corpus
+because this environment blocks direct terminal downloads; its record count and
+class counts were checked against the UCI repository record.
+
+Suggested citation:
+Almeida, T., & Hidalgo, J. (2011). SMS Spam Collection [Dataset]. UCI Machine
+Learning Repository. https://doi.org/10.24432/C5CC84
+
+Original paper:
+Almeida, T. A., Hidalgo, J. M. G., & Yamakami, A. (2011). Contributions to the
+study of SMS spam filtering: New collection and results. Proceedings of the
+2011 ACM Symposium on Document Engineering (DOCENG '11).
+
