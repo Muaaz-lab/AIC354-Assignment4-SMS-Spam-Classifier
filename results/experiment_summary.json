@@ -1,0 +1,65 @@
+{
+  "dataset": "UCI SMS Spam Collection",
+  "source": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "rows": 5574,
+  "class_counts": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "train_rows": 4459,
+  "test_rows": 1115,
+  "test_fraction": 0.2,
+  "random_state": 42,
+  "vocabulary_size": 12007,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_features": 30000,
+    "sublinear_tf": true,
+    "stop_words": null
+  },
+  "best_model_by": "macro F1, with spam recall as the tie-breaker",
+  "best_model": "Linear SVM",
+  "best_test_metrics": {
+    "Model": "Linear SVM",
+    "Accuracy": 0.9901345291479821,
+    "Balanced accuracy": 0.9716015673850515,
+    "Macro F1": 0.9783892265052216,
+    "Spam precision": 0.9791666666666666,
+    "Spam recall": 0.9463087248322147,
+    "Spam F1": 0.962457337883959,
+    "Fit seconds": 0.06433170000673272
+  },
+  "best_test_classification_report": {
+    "ham": {
+      "precision": 0.9917610710607621,
+      "recall": 0.9968944099378882,
+      "f1-score": 0.9943211151264842,
+      "support": 966.0
+    },
+    "spam": {
+      "precision": 0.9791666666666666,
+      "recall": 0.9463087248322147,
+      "f1-score": 0.962457337883959,
+      "support": 149.0
+    },
+    "accuracy": 0.9901345291479821,
+    "macro avg": {
+      "precision": 0.9854638688637143,
+      "recall": 0.9716015673850515,
+      "f1-score": 0.9783892265052216,
+      "support": 1115.0
+    },
+    "weighted avg": {
+      "precision": 0.9900780519982326,
+      "recall": 0.9901345291479821,
+      "f1-score": 0.99006308570125,
+      "support": 1115.0
+    }
+  },
+  "saved_pipeline": "models\\best_sms_spam_model.joblib",
+  "scikit_learn_version": "1.9.0"
+}
